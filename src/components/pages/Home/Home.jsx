@@ -4,9 +4,12 @@ import { Link } from "react-router-dom"
 import {LINKS} from "../../Content/links"
 import {ICONS} from "../../Content/icons"
 import Me from "../../Content/Images/ME.png"
+import { Navbar } from "../../NavBar/Navbar";
+
 
 export const Home = () => {
   return (
+    <div className=""><Navbar/>
     <div className={styles.home} id="home">
         <div className={styles.homeContent}>
             <h1>Hi, I am <Link to="/about" className={styles.title}>Drew Huth</Link></h1>
@@ -27,6 +30,7 @@ export const Home = () => {
         <div className={styles.me}>
        <img src={Me} alt="Image of Drew Huth sitting on the steps of Alumni Hall at Saint Anselm College" />
         </div>    
+    </div>
     </div>
   )
 }
