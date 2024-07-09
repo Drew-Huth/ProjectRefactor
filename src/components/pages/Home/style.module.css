@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: 94vh;
+    /* width: 100%; */
     padding: 0px 5%;
     background-color: #4a4a4a;
     /* background-image: url('IMG_5801.PNG'); */
@@ -150,4 +151,25 @@
     transition: .5s linear;
     transition-timing-function: ease-in-out;
     scale: 105%;
+  }
+
+  @media (max-width:1150px) {
+    .me img{
+      /* display: none; */
+      scale: 75%;
+
+    }
+     .home{
+      flex-direction: column;
+      padding: none;
+      justify-content: center;
+     }
+  }
+
+  @media (max-height:1200px) {
+    /* .me img{
+      display: none;
+      scale: 75%;
+      justify-content: center;
+    } */
   }

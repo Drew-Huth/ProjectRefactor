@@ -21,11 +21,14 @@ export const Navbar = () => {
                 setBottom(!bottom);
                 
             }}>
-                <span className={top ? "top" : ""}></span>
-                <span className={middle ? "middle" : ""}></span>
-                <span className={bottom ? "bottom" : ""}></span>
+                <span className={top ? "top" : "top-closed"}></span>
+                <span className={middle ? "middle" : "middle-closed"}></span>
+                <span className={bottom ? "bottom" : "bottom-closed"}></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
+                <li>
+                    <NavLink to="/">Home</NavLink>
+                </li>
                 <li>
                     <NavLink to="/about">About</NavLink>
                 </li>
